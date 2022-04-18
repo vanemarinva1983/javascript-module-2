@@ -8,5 +8,7 @@ var kitten = {
     furColour: "brown"
 };
 
+console.log(kitten);
+
 // YOUR CODE HERE
 

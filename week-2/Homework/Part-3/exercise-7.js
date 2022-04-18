@@ -42,8 +42,25 @@ var product2 = {
   stock: 2
 };
 
+var product3 = {
+  id: 3,
+  name: "Hamburguesa",
+  price: 10.45,
+  stock: 20
+};
+
+var product4 = {
+  id: 4,
+  name: "Pizza",
+  price: 8.99,
+  stock: 10
+};
+
 products.push(product1);
 products.push(product2);
+products.push(product3);
+products.push(product4);
+
 
 var shoppingCart = {
   totalPrice: 0,
@@ -51,11 +68,20 @@ var shoppingCart = {
 };
 
 function addToShoppingCart(id){
+  products.forEach(product => {
+    if (product.id == id) {
+      shoppingCart.totalPrice = product.price + shoppingCart.totalPrice;
+      shoppingCart.selectedProducts.push(product)
+    }
+  })
 
 }
 
 function removeFromShoppingCart(id){
-
+  const positionProduct = shoppingCart.selectedProducts.findIndex(products => products.id === id)
+  console.log(positionProduct);
+  shoppingCart.totalPrice = shoppingCart.totalPrice - shoppingCart.selectedProducts[positionProduct].price
+  shoppingCart.selectedProducts = shoppingCart.selectedProducts.filter(product => product.id != id)
 }
 
 function shop(){
