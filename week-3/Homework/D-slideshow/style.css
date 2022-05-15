@@ -1,1 +1,64 @@
 /** Write your CSS in here **/
+h1 {
+    size: 200px;
+    font-family:'Courier', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(214, 227, 227);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: black;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 12%, rgba(0,212,255,1) 100%);
+}
+
+#autoBackBtn {
+    background-color: rgb(175, 190, 238);
+    border: 0.5px solid gray;
+    border-radius: 7px;
+    margin-top: 3px;
+    margin-right: 0px;
+    margin-left: 3px;
+}
+
+#anteriorBtn {
+    background-color:  rgb(175, 190, 238);
+    border: 0.5px solid gray;
+    border-radius: 7px;
+    margin-top:3px;
+    margin-right: 0px;
+}   
+
+#stopBtn {
+    background-color: rgb(175, 190, 238);
+    border: 0.5px solid gray;
+    border-radius: 7px;
+    margin-top: 3x;
+    margin-right: 0px;
+}
+
+#siguienteBtn {
+    background-color:  rgb(175, 190, 238);
+    border: 0.5px solid gray;
+    border-radius: 7px;
+    margin-top: 3px;
+    margin-right: 0px;
+}
+
+#autoNextBtn {
+    background-color:  rgb(175, 190, 238);
+    border: 0.5px solid gray;
+    border-radius: 7px;
+    margin-top: 3px;
+}
+
+#contenedor {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+#imgGato {
+    width: 400px;
+}
